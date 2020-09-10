@@ -33,7 +33,8 @@ jobs:
           name: build dir
           path: |
             _build
-      - run: zip npmingen.zip _build/default/cmd.exe
+      - run: cd ./_build/default
+      - run: zip npmingen.zip cmd.exe
       - name: Create release
         id: create_release
         uses: actions/create-release@v1.0.0
