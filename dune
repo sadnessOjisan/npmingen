@@ -1,0 +1,3 @@
+(executable
+ (name cmd)
+ (libraries core yojson))
