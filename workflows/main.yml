@@ -33,7 +33,7 @@ jobs:
           name: build dir
           path: |
             _build
-      - run: zip cmd.zip _build/
+      - run: zip npmingen.zip _build/default/cmd.exe
       - name: Create release
         id: create_release
         uses: actions/create-release@v1.0.0
@@ -51,6 +51,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./cmd.zip
-          asset_name: cmd.zip # 必須だがなんでもいい
+          asset_path: ./npmingen.zip
+          asset_name: npmingen.zip
           asset_content_type: application/zip
