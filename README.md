@@ -1,10 +1,11 @@
 # pkgjson-to-cmd
+
 package.json から install command を文字列で出力する
 
 ```sh
 $ dune build
 
-$ dune run ./cmd.exe path/to/json
+$ dune exec ./cmd.exe dev
 > npm i next react react-dom
 > npm i -D next typescript
 ```
@@ -17,10 +18,10 @@ $ opam install core
 
 ## memo
 
-* https://dev.realworldocaml.org/json.html
+- https://dev.realworldocaml.org/json.html
   - json parse について
-* https://github.com/avsm/setup-ocaml/
+- https://github.com/avsm/setup-ocaml/
   - gha について
-* brew について
+- brew について
   - https://deeeet.com/writing/2014/05/20/brew-tap/
   - https://www.rasukarusan.com/entry/2019/11/03/211338
