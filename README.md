@@ -3,9 +3,7 @@
 package.json から install command を文字列で出力する
 
 ```sh
-$ dune build
-
-$ dune exec ./cmd.exe dev
+$ dune exec ./cmd.exe https://raw.githubusercontent.com/sadnessOjisan/npmingen/master/package.json
 > npm i next react react-dom
 > npm i -D next typescript
 ```
