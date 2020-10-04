@@ -4,8 +4,6 @@ open Out_channel
 open Lwt
 open Cohttp_lwt_unix
 
-let js = Yojson.Basic.from_channel (In_channel.create "package.json")
-
 let rec print_list = function
   | [] -> ()
   | e :: l ->
