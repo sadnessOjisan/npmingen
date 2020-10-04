@@ -1,0 +1,20 @@
+opam-version: "2.0"
+name: "npmingen"
+version: "0.1.2"
+synopsis: "give url, emit npm install script"
+description: """
+npm install generator from package.json raw url
+"""
+maintainer: "sadnessOjisan <sadness.ojisan@gmail.com>"
+authors: "sadnessOjisan <sadness.ojisan@gmail.com>"
+license: "MIT"
+homepage: "https://github.com/sadnessOjisan/npmingen"
+bug-reports: "https://github.com/sadnessOjisan/npmingen/issues"
+dev-repo: "https://github.com/sadnessOjisan/npmingen"
+depends: [ "ocaml" "ocamlfind" ]
+build: [
+  [
+    "dune"
+    "build"
+  ]
+]

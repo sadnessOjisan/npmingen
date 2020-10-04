@@ -1,3 +1,4 @@
 (executable
- (name cmd)
+ (name main)
+ (public_name npmingen)
  (libraries core yojson cohttp lwt cohttp-lwt-unix))

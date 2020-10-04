@@ -1,9 +1,9 @@
-# pkgjson-to-cmd
+# npmingen
 
 package.json から install command を文字列で出力する
 
 ```sh
-$ dune exec ./cmd.exe https://raw.githubusercontent.com/sadnessOjisan/npmingen/master/package.json
+$ dune exec npmingen https://raw.githubusercontent.com/sadnessOjisan/npmingen/master/package.json
 > npm i next react react-dom
 > npm i -D next typescript
 ```
